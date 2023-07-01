@@ -306,12 +306,14 @@ a {
 
     .header__bg-img {
         @media (max-width:$l) {
+            background-color: #FFFFFF;
             @include header-bg-img;
         }
     }
 
     .header__shade_special {
         background: none;
+        backdrop-filter: none;
 
         @media (max-width:$l) {
             background-color: #242A56B3;
@@ -339,7 +341,8 @@ a {
 
         @media (max-width:$s) {
             grid-template-columns: 1fr;
-            min-height: $header-h-s;
+            grid-template-rows: $header-h-s;
+            min-height: auto;
         }
     }
 
@@ -394,7 +397,7 @@ a {
             width: 320px;
             height: 566px;
             border-radius: 0;
-            margin-left: -16px;
+            margin: 0 -16px;
         }
 
         .form__box {
@@ -438,6 +441,7 @@ a {
                 line-height: 55px;
                 border: 2px solid $color5;
                 border-radius: 10px;
+                color: $dark_basic;
 
                 @media (max-width:$l) {
                     width: 342px;
@@ -465,6 +469,7 @@ a {
 
             .form__textarea {
                 height: 120px;
+                resize: none;
             }
 
             .form__button {
