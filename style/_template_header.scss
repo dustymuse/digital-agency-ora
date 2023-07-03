@@ -380,7 +380,7 @@ a {
         height: 640px;
         background: $color2;
         border-radius: 10px;
-        color: $color4;
+        color: $dark_basic;
         font-family: $font;
 
         @media (max-width:$l) {
@@ -460,11 +460,11 @@ a {
             }
 
             .form__item::-webkit-input-placeholder {
-                color: $color5;
+                color: $dark_secondary;
             }
 
             .form__item::-moz-placeholder {
-                color: $color5;
+                color: $dark_secondary;
             }
 
             .form__textarea {
@@ -498,8 +498,8 @@ a {
                 border-width: 0;
                 line-height: 18px;
                 border-radius: 12px;
-                color: $color2;
-                background: $color4;
+                color: $bright_basic;
+                background: $dark_basic;
                 font-weight: 700;
 
                 @media (max-width:$l) {
@@ -545,12 +545,12 @@ a {
                 height: 48px;
                 margin-left: 12px;
                 line-height: 25px;
-                color: $color5;
+                color: $dark_secondary;
             }
 
             .form__link {
                 text-transform: none;
-                color: $color5;
+                color: $dark_secondary;
             }
         }
     }
