@@ -607,4 +607,94 @@ a {
 .header .form .form__box .form__link {
   text-transform: none;
   color: #C1D3DE;
+}
+
+.section-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: #242A56;
+}
+@media (max-width: 1460px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+.basic-section-text {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  color: #242A56;
+}
+@media (max-width: 1023px) {
+  .basic-section-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .basic-section-text {
+    font-size: 18px;
+  }
+}
+
+.table {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  color: #242A56;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 12px;
+  border: 1px solid #C1D3DE;
+  overflow: hidden;
+}
+.table .table__cell:not(:last-of-type) {
+  border-right: 1px solid #C1D3DE;
+}
+.table .table__row:not(:last-of-type) .table__cell {
+  border-bottom: 1px solid #C1D3DE;
+}
+@media (max-width: 1460px) {
+  .table {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .table {
+    font-size: 12px;
+  }
+}
+.table .table__cell {
+  padding: 20px 10px;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  .table .table__cell {
+    padding: 10px 16px;
+  }
+}
+.table .table__cell_head {
+  text-align: left;
+  font-weight: 700;
+}
+@media (max-width: 1023px) {
+  .table .table__cell_head {
+    padding-right: 0;
+  }
+}
+.table .table__row:nth-of-type(2n+1) {
+  background-color: #FFFFFF;
+}
+.table .table__row:nth-of-type(2n) {
+  background-color: #EDF4FA;
+}
+.table .table__list {
+  padding-left: 18px;
+}
+@media (max-width: 1460px) {
+  .table .table__list {
+    padding-left: 12px;
+  }
+}
+.table .table__list-item::marker {
+  color: #376FFF;
 }/*# sourceMappingURL=Page1_Home_Style.css.map */

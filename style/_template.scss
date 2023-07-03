@@ -1,3 +1,91 @@
+.section-title {
+    font-family: $font;
+    font-size: 38px;
+    font-weight: 900;
+    color: $light_secondary;
 
+    @media (max-width:$l) {
+        font-size: 28px;
+    }
+}
 
+.basic-section-text {
+    font-family: $font;
+    font-size: 20px;
+    color: $light_secondary;
 
+    @media (max-width:$m) {
+        font-size: 16px;
+    }
+
+    @media (max-width:$s) {
+        font-size: 18px;
+    }
+}
+
+.table {
+    font-family: $font;
+    font-size: 20px;
+    color: $light_secondary;
+
+    //some dark magic
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 12px;
+    border: 1px solid $dark_secondary;
+    overflow: hidden;
+
+    .table__cell:not(:last-of-type) {
+        border-right: 1px solid $dark_secondary;
+    }
+
+    .table__row:not(:last-of-type) .table__cell {
+        border-bottom: 1px solid $dark_secondary;
+    }
+
+    @media (max-width:$l) {
+        font-size: 16px;
+    }
+
+    @media (max-width:$m) {
+        font-size: 12px;
+    }
+
+    .table__cell {
+        padding: 20px 10px;
+        vertical-align: top;
+
+        @media (max-width:$s) {
+            padding: 10px 16px;
+        }
+    }
+
+    .table__cell_head {
+        text-align: left;
+        font-weight: 700;
+
+        @media (max-width:$m) {
+            padding-right: 0;
+        }
+    }
+
+    .table__row:nth-of-type(2n+1) {
+        background-color: $dark_basic;
+    }
+
+    .table__row:nth-of-type(2n) {
+        background-color: $lightgrey_basic;
+    }
+
+    .table__list {
+        padding-left: 18px;
+
+        @media (max-width:$l) {
+            padding-left: 12px;
+        }
+    }
+
+    .table__list-item::marker {
+        color: $bright_basic;
+    }
+}

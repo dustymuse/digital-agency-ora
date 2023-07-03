@@ -3,3 +3,57 @@
 @import './Page5_SMM_Header-vars';
 @import '../template_header';
 @import '../template';
+
+//section communication structure
+.communication {
+    background-color: $lightgrey_basic;
+    padding: 80px 0;
+
+    @media (max-width: $l) {
+        padding: 40px 0 60px;
+    }
+
+    @media (max-width:$m) {
+        padding: 40px 0;
+    }
+
+    .communication__title {
+        margin-bottom: 24px;
+        text-align: center;
+
+
+        @media (max-width: $m) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .communication__text {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width: $l) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $m) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .communication__table {
+        width: 100%;
+        table-layout: fixed;
+
+        @media (max-width:$s) {
+            display: none;
+        }
+    }
+
+    .communication__table_mobile {
+        display: none;
+
+        @media (max-width:$s) {
+            display: block;
+        }
+    }
+}
